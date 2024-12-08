@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pokemonappg10/pages/home_page.dart';
-import 'package:pokemonappg10/pages/provider/dog_provider.dart';
-import 'package:pokemonappg10/pages/provider/user_provider.dart';
+import 'package:pokemonappg10/pages/pokemon_home_page.dart';
+import 'package:pokemonappg10/provider/dog_provider.dart';
+import 'package:pokemonappg10/provider/user_provider.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class ProviderExample extends StatelessWidget {
         ChangeNotifierProvider(create: (context) => UserProvider()),
       ],
       child: MaterialApp(
-        home: HomePage(),
+        home: PokemonHomePage(),
         debugShowCheckedModeBanner: false,
       ),
     );

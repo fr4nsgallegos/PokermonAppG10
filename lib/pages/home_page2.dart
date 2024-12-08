@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pokemonappg10/pages/provider/dog_provider.dart';
-import 'package:pokemonappg10/pages/provider/user_provider.dart';
+import 'package:pokemonappg10/provider/dog_provider.dart';
+import 'package:pokemonappg10/provider/user_provider.dart';
 import 'package:provider/provider.dart';
 
 class HomePage2 extends StatelessWidget {
