@@ -1,11 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:pokemonappg10/pages/home_page.dart';
+import 'package:pokemonappg10/pages/provider/dog_provider.dart';
+import 'package:pokemonappg10/pages/provider/user_provider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(
-    MaterialApp(
-      home: HomePage(),
-      debugShowCheckedModeBanner: false,
-    ),
+    ProviderExample(),
   );
+}
+
+class ProviderExample extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => DogProvider()),
+        ChangeNotifierProvider(create: (context) => UserProvider()),
+      ],
+      child: MaterialApp(
+        home: HomePage(),
+        debugShowCheckedModeBanner: false,
+      ),
+    );
+  }
 }
