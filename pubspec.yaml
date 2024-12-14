@@ -34,10 +34,17 @@ dependencies:
   http: ^1.2.2
   palette_generator: ^0.3.3+5
   provider: ^6.1.2
+  retrofit: ^4.4.1
+  json_annotation: ^4.9.0
+  dio: ^5.7.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  retrofit_generator: ^9.1.2
+  build_runner: ^2.4.12
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.
